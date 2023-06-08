@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="wrapper">
+  <div class="inner">
+    <div class="image-holder">
+      <img src="assets/img/mobile.jpg" alt="" height="100%" width="100%" >
+    </div>
+    <form [formGroup]="contactForm" (ngSubmit)="createCustomer()">
+      <h3>Sign Up</h3>
+      <!-- <div class="form-holder">
+        <input formControlName="custmobile"  custmobile="custmobile" type="tel" placeholder="mobile" class="form-control">
+      </div> -->
+    <div>
+        <input formControlName="custmobile" id="custmobile" type="text" class="form-control" placeholder="mobile">   
+    </div>
+    <div>
+      <input formControlName="custname" id="custname" type="text" class="form-control" placeholder="name">   
+  </div>
+  <div>
+    <input formControlName="custmail" id="custmail" type="text" class="form-control" placeholder="mail">   
+</div>
+<div>
+  <input formControlName="custpassword" id="custpassword" type="password" class="form-control" placeholder="password">   
+</div>
+      <!-- <div class="form-holder">
+        <input formControlName="custmail" custmail="custmail" type="text" placeholder="e-mail" class="form-control">
+      </div>
+      <div class="form-holder active">
+        <input formControlName="custname" custname="custname" type="text" placeholder="name" class="form-control" >
+      </div>
+      <div class="form-holder">
+        <input formControlName="custpassword" custpassword="custpassword" type="password" placeholder="Password" class="form-control" style="font-size: 15px;"  id="password" name="password">
+      </div> -->
+
+      <div class="checkbox">
+        <label style=" letter-spacing: 1px;font-size: 15px;color:black;">
+          <input type="checkbox" checked > I agree all statement in <a href="#">Terms & Conditions</a>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-login">
+        <button class="btn" type="submit">Sign up</button>
+        <p style=" letter-spacing: 1px;font-size: 15px;color:black;">Already Have account? &nbsp;<a href="login">Login</a></p>
+        <br>
+        <br>
+      </div>
+    </form>
+    <br>
+  <br>
+  </div>
+</div>
+<app-footer></app-footer>

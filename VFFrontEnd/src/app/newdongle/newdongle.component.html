@@ -1,0 +1,64 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<br>
+<br>
+   
+<div class="register" width="100%">
+    <form [formGroup]="connectform" (ngSubmit)="Submit()">
+    <div class="row">
+        <div class="col-md-9 register-right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <br>
+                    <h3 class="register-heading">Buy a New Connection</h3>
+                    <br>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" formControlName="name" class="form-control" placeholder="Name *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" formControlName="aadhar" class="form-control" placeholder="Aadhar Number *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="password" formControlName="password" class="form-control" placeholder="Password *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="password" formControlName="address" class="form-control"  placeholder="Your Address *" value="" />
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" formControlName="mail" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" formControlName="mobile_no" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone no *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <select class="form-control" formControlName="type" class="form-control" placeholder="Select Connection type *" >
+                                    <option value="" disabled selected>select connection type</option>
+                                    <option>Prepaid</option>
+                                    <option>Postpaid</option>
+                                    <option>Dongle</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" formControlName="pincode" class="form-control" placeholder="Your Pincode *" value="" />
+                            </div>
+                            <br>
+                            <input type="submit" class="btnRegister"  value="Buy Now"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<app-footer></app-footer>

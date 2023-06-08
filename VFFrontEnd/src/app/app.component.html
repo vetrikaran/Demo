@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Boxicons CDN Link -->
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<nav>
+  <div class="navbar">
+    <i class='bx bx-menu'></i>
+    <div class="logo"><a href="#">VoizFonica</a></div>
+    <div class="nav-links">
+      <div class="sidebar-logo">
+        <span class="logo-name">VoizFonica</span>
+        <i class='bx bx-x' ></i>
+      </div>
+      <ul class="links">
+        <li><a routerLink="home">HOME</a></li>
+        <li>
+          <a >PREPAID</a>
+          <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+          <ul class="htmlCss-sub-menu sub-menu">
+            <li><a routerLink="preplans">View Plans</a></li>
+            <li><a routerLink="recharge">Recharge</a></li>
+            <li><a href="newdongle">New Prepaid SIM</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>POSTPAID</a>
+          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+          <ul class="js-sub-menu sub-menu">
+            <li><a href="postplans">View Plans</a></li>
+            <li><a href="paybill">Pay Bills</a></li>
+            <li><a href="newdongle">New Postpaid SIM</a></li>
+          </ul>
+        </li>
+  <li>
+          <a>DONGLE</a>
+          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+          <ul class="js-sub-menu sub-menu">
+            <li><a routerLink="dongleplans">View Plans</a></li>
+            <li><a href="#">Pay Bills & Recharge</a></li>
+            <li><a href="newdongle">Buy a New Connection</a></li>
+          </ul>
+        </li>
+  <li>
+          <a>HELP</a>
+          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+          <ul class="js-sub-menu sub-menu">
+            <li><a routerLink="contact">Contact Us</a></li>
+            <li><a routerLink="createinquiry">Complaint Form</a></li>
+
+      <li><a routerLink="faq">FAQ</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="about">ABOUT US</a></li>
+      </ul>
+    </div>
+    <a routerLink="login" style="color: black;text-decoration: none;" onMouseOver="this.style.color='limegreen'" onMouseOut="this.style.color='black'">&nbsp;&nbsp;<i class="fa fa-fw fa-user"></i>
+      <br>Login</a>
+  </div>
+</nav>
+<router-outlet></router-outlet>
