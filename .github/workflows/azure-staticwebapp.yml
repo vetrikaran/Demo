@@ -52,7 +52,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "VFFrontEnd/"
           api_location: ""
-          app_artifact_location: "dist/vffront-end"
+          app_artifact_location: "VFFrontEnd/dist/vffront-end"
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
